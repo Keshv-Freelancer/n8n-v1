@@ -11,7 +11,7 @@
     "prepare": "node scripts/prepare.mjs",
     "preinstall": "node scripts/block-npm-install.js",
     "build": "turbo run build",
-    "build": "NODE_OPTIONS='--max-old-space-size=2048' lerna run build --stream --concurrency 1",
+    
 
     "build:backend": "turbo run build:backend",
     "build:frontend": "turbo run build:frontend",
@@ -48,7 +48,7 @@
     "worker": "./packages/cli/bin/n8n worker"
   },
   "devDependencies": {
-    "lerna": "^7.3.1",
+  
     "@biomejs/biome": "^1.9.0",
     "@n8n/eslint-config": "workspace:*",
     "@types/jest": "^29.5.3",
